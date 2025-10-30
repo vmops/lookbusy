@@ -13,4 +13,4 @@ RUN gcc lb.c -lm -o lookbusy
 # Stage 2: Runtime environment
 FROM alpine:latest
 COPY --from=builder /lookbusy .
-CMD ["/lookbusy", "-c", "20-25", "-r", "curve" ]
+CMD ["/lookbusy", "-c", "20-25" ]
